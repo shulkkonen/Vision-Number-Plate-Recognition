@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/gray"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/surface_view"
+        android:layout_marginEnd="29dp"></ListView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/text_view"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkGreen" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="Scanning..."
+        android:textColor="@color/green"
+        android:textSize="30sp" />
+
+</RelativeLayout>
